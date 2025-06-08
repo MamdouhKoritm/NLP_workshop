@@ -2,6 +2,30 @@
 
 This repository contains the implementation of a 3-task Arabic mental health question-answering system based on the MentalQA dataset.
 
+## Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/MamdouhKoritm/NLP_workshop.git
+cd NLP_workshop
+```
+
+2. Set up the Python environment:
+```bash
+python setup_environment.py
+```
+
+3. Create the dataset splits:
+```bash
+python create_test_sets.py
+python create_train_dev_test_split.py
+```
+
+Note: Large model files and checkpoints are not included in the repository. When you run the training:
+- The MARBERT model will be automatically downloaded and cached locally
+- Model checkpoints will be generated in the respective task directories
+- All large files are properly gitignored
+
 ## Project Overview
 
 The project consists of three main tasks:
